@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:fantasy;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: rgb(203, 150, 150);
+    color:rgb(255, 255, 255);
+    
+} */
+
+ /* #header{
+    width: 100%;
+    height: 100%;
+    background-image: url(IMAGES/kim-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}  */
+
+#header{
+    background-color: #000000;
+}
+
+
+#songs{
+    background-color: black;
+}
+
+#kim{
+    right:0;
+    height:80%;
+    width:100%;
+    background-color: rgb(203, 150, 150);
+}
+
+.container{
+    padding: 10px 20%;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(63, 40, 40);
+    text-decoration: none;
+    font-size:25px;
+    padding:10px;
+    margin: 20px 10px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width:0;
+    height:7px;
+    background:#292828;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+.row{
+    padding: 20px;
+    position: absolute;
+    background-color: rgb(203, 150, 150) ;
+    
+}
+ 
+.overlay{
+    position:absolute;
+    bottom:35%;
+    left:15%;
+    width:700px;
+    font-size:60px;
+    padding: 20px;
+
+}
+
+h1{
+    color: #ebd4d4;
+}
+
+span{
+   
+    color: #3c2020;
+}
+
+h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+     background-color: #000000; 
+     padding:40px;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight:bolder;
+}
+
+h2:hover{
+    text-shadow: 5px 5px 6px rgb(111, 111, 111);
+}
+
+
+
+.kimkim{
+    height:500px;
+}
+
+p{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.pic{
+    display: flex;
+}
+
+.pic img{
+    width: 400px;
+}
+
+.pic h4{
+    font-size: 39px;
+    color: white;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pic p{
+    text-align:justify;
+    margin: 10px;
+    font-size:28px ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(141, 141, 141);
+}
+
+#about{
+    background-color: black;
+}
+
+.songlist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.container h1{
+    color: black;
+    text-align: center;
+    padding:20px;
+    margin-top:2%;
+    font-size:50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display:flex;
+    transition: transform 0.5s;
+} 
+
+.layer{
+    width: 100%;
+    height:0;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: height 0.5s;
+}
+
+.work:hover img{
+    transform: scale(0.9);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.list{
+    position: relative;
+    overflow: hidden;
+    border-radius:30px;
+    
+}
+
+#ambassador{
+    background-color: rgb(0, 0, 0);
+}
+
+.list img{
+    width: 100%;
+    height: 900px;
+    display:block;
+    transition: transform 0.5s;
+    
+}
+
+.row1{
+    display: grid;
+    display: flex;
+    grid-gap:200px;
+    background-color: rgb(0, 0, 0);
+}
+
+.lay{
+    width: 100%;
+    height:0;
+    background: linear-gradient(rgba(78, 76, 76, 0.46),#000000c2);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.lay p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(148, 148, 148);
+    font-size:30px;
+}
+
+.lay h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.lay a{
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    line-height: 60px;
+    width: 80px;
+    background: black;
+    border-radius: 50px;
+}
+
+.list:hover{
+    transform: scale(0.9);
+}
+
+.list:hover .lay{
+    height:900px;
+}
+
+.row2 h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 50px;
+}
+
+h1:hover{
+    text-shadow: 2px 4px 6px black;
+}
+
+.row2 p{
+    justify-content: center;
+    color: #ffffff;
+
+}
+
+.container1{
+    background-color: #000000;
+    padding: 40px;
+
+}
+
+.row3{
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.row3 a{
+    color: white;
+}
+
+.intericons{
+    margin-left:48%;
+}
+
+.work-details:hover{
+    transform: scale(0.9);
+}
